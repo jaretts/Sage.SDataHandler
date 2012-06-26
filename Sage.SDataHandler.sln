@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sage.SDataHandler", "Sage.SDataHandler\Sage.SDataHandler.csproj", "{B85F60B4-5E55-4AC8-A128-C0C8F7E9F50E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B85F60B4-5E55-4AC8-A128-C0C8F7E9F50E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B85F60B4-5E55-4AC8-A128-C0C8F7E9F50E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B85F60B4-5E55-4AC8-A128-C0C8F7E9F50E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B85F60B4-5E55-4AC8-A128-C0C8F7E9F50E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
