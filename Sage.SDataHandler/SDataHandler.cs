@@ -46,9 +46,13 @@ namespace Sage.SDataHandler
                         }
                         else
                         {
+                            /* Disable this logic for now; only metadata returned will be in model
                             var list = new List<object>();
                             list.Add(responseObject);
                             ProcessObject<object>(responseObject as IEnumerable<object>, response, false);
+                             */
+                            response.Content = new ObjectContent<object>( responseObject, System.Web.Http.GlobalConfiguration.Configuration.Formatters[0]);
+
                         }
                     }
 
@@ -77,8 +81,12 @@ namespace Sage.SDataHandler
 
         private bool ResponseIsValid(HttpResponseMessage response)
         {
-            if (response == null || response.StatusCode != HttpStatusCode.OK || !(response.Content is ObjectContent)) return false;
-            return true;
+            bool retVal = 
+                response != null && 
+                response.StatusCode == HttpStatusCode.OK &&
+                response.Content is ObjectContent;
+            
+            return retVal;
         }
 
         }

@@ -9,7 +9,7 @@ namespace Sage.SDataHandler
 {
 
         [DataContract]
-        public class SDataResourceMetadata<T> where T : class
+    public class SDataResourceMetadata<T> where T : class
         {
             [DataMember(Name = "$url")]
             public String url { get; set; }
@@ -28,6 +28,7 @@ namespace Sage.SDataHandler
 
                 if (httpResponse.Content != null && httpResponse.IsSuccessStatusCode)
                 {
+
                     Uri reqUri = httpResponse.RequestMessage.RequestUri;
                     this.url = reqUri.AbsoluteUri;
 
